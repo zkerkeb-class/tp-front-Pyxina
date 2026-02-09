@@ -4,3 +4,44 @@
   padding: 2rem;
   text-align: center;
 }
+
+/* Handmade feel */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Comfortaa:wght@300;400;700&family=Pacifico&display=swap');
+
+body {
+  font-family: 'Fredoka', 'Comfortaa', sans-serif;
+  background: linear-gradient(45deg, #FFE4E1 0%, #FFF0F5 50%, #FFE4E1 100%);
+  background-attachment: fixed;
+  background-size: 200% 200%;
+}
+
+/* Subtle animated background */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  animation: gradientShift 15s ease infinite;
+}
+
+h1, h2, h3 {
+  font-family: 'Comfortaa', cursive;
+  letter-spacing: 0.5px;
+}
+
+/* Handwritten style decorative elements */
+.doodle {
+  display: inline-block;
+  opacity: 0.3;
+  font-size: 1.5em;
+  margin: 0 5px;
+  transform: rotate(-5deg);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: rotate(-5deg) translateY(0); }
+  50% { transform: rotate(5deg) translateY(-5px); }
+}

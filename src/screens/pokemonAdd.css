@@ -1,0 +1,220 @@
+.pokemon-add {
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, rgba(255, 182, 217, 0.05) 0%, rgba(221, 160, 221, 0.05) 100%);
+    min-height: 100vh;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #FF69B4 0%, #DA70D6 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+}
+
+.back-link:hover {
+    background: linear-gradient(135deg, #FFD700 0%, #FF69B4 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+}
+
+.add-form-container {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 240, 245, 0.95) 100%);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 12px 40px rgba(255, 105, 180, 0.15);
+    border: 2px solid rgba(255, 182, 217, 0.3);
+}
+
+.add-form-container h1 {
+    margin: 0 0 30px 0;
+    color: #333;
+    text-align: center;
+}
+
+.error-message {
+    background-color: #ffe6e6;
+    border: 2px solid #ff6b6b;
+    color: #d32f2f;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(255, 182, 217, 0.1) 0%, rgba(221, 160, 221, 0.1) 100%);
+    border-radius: 15px;
+    border: 2px solid rgba(255, 182, 217, 0.2);
+}
+
+.form-section h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.type-input-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.type-input-group input {
+    flex: 1;
+}
+
+.btn-remove {
+    padding: 10px 15px;
+    background-color: #ff8787;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-remove:hover {
+    background-color: #ff6b6b;
+}
+
+.btn-add-type {
+    padding: 10px 15px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+}
+
+.btn-add-type:hover {
+    background-color: #764ba2;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-create {
+    flex: 1;
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #98FB98 0%, #90EE90 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 4px 15px rgba(144, 238, 144, 0.3);
+}
+
+.btn-create:hover:not(:disabled) {
+    background: linear-gradient(135deg, #FFD700 0%, #98FB98 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+}
+
+.btn-create:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn-cancel-link {
+    flex: 1;
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #DDA0DD 0%, #DA70D6 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 4px 15px rgba(221, 160, 221, 0.3);
+}
+
+.btn-cancel-link:hover {
+    background: linear-gradient(135deg, #FFB6D9 0%, #FF69B4 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+}
+
+@media (max-width: 768px) {
+    .pokemon-add {
+        padding: 15px;
+    }
+
+    .add-form-container {
+        padding: 20px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .btn-create,
+    .btn-cancel-link {
+        width: 100%;
+    }
+}
