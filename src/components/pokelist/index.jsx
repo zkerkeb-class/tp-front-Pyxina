@@ -118,7 +118,10 @@ const PokeList = () => {
     return (
         <div className="poke-list-container">
             <h2 style={{color: '#00D9FF', fontSize: '2.2em', fontFamily: "'Comfortaa', cursive"}}>Liste des Pokémon</h2>
-            <Link to="/pokemonAdd" className="btn-add-pokemon">+ Ajouter un Pokémon</Link>
+            <div className="action-buttons">
+                <Link to="/pokemonAdd" className="btn-add-pokemon">+ Ajouter un Pokémon</Link>
+                <Link to="/memory" className="btn-memory-game">🎮 Jouer au Memory</Link>
+            </div>
             
             <PokemonSearch onSearch={handleSearch} pokemons={allPokemons} />
 

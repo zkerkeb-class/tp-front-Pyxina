@@ -194,6 +194,31 @@
     box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
 }
 
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-memory-game {
+    padding: 12px 28px;
+    background: #00D9FF;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3);
+    font-family: 'Comfortaa', cursive;
+    display: inline-block;
+}
+
+.btn-memory-game:hover {
+    background: #00FFE7;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 217, 255, 0.4);
+}
+
 .no-results {
     text-align: center;
     padding: 50px 20px;

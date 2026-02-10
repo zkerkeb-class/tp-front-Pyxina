@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { BrowserRouter, Routes, Route } from "react-router";
 import PokemonDetails from './screens/pokemonDetails.jsx';
 import PokemonAdd from './screens/pokemonAdd.jsx';
+import PokemonMemory from './screens/pokemonMemory.jsx';
 
 createRoot(document.getElementById('root')).render(
  <BrowserRouter>
@@ -12,6 +13,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<App />} />
         <Route path="/pokemonDetails/:id" element={<PokemonDetails />} />
         <Route path="/pokemonAdd" element={<PokemonAdd />} />
+        <Route path="/memory" element={<PokemonMemory />} />
     </Routes>
 </BrowserRouter>
 ,

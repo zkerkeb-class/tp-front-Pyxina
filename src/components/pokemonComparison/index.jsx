@@ -23,7 +23,6 @@ const PokemonComparison = ({ pokemons, onClose }) => {
 
         return (
             <div className="stat-row">
-                <div className="stat-label">{label}</div>
                 <div className="stat-container">
                     <div className="pokemon-stat">
                         <div className="stat-value">{value1}</div>
@@ -35,6 +34,7 @@ const PokemonComparison = ({ pokemons, onClose }) => {
                         </div>
                     </div>
                 </div>
+                <div className="stat-label">{label}</div>
                 <div className="stat-container">
                     <div className="pokemon-stat">
                         <div className="stat-value">{value2}</div>
@@ -92,12 +92,12 @@ const PokemonComparison = ({ pokemons, onClose }) => {
 
                         {/* Totals */}
                         <div className="stat-row stat-total">
-                            <div className="stat-label">Total</div>
                             <div className="stat-container">
                                 <div className="total-value">
                                     {stats.reduce((sum, stat) => sum + pokemon1.base[stat], 0)}
                                 </div>
                             </div>
+                            <div className="stat-label">Total</div>
                             <div className="stat-container">
                                 <div className="total-value">
                                     {stats.reduce((sum, stat) => sum + pokemon2.base[stat], 0)}
