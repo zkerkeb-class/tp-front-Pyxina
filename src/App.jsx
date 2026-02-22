@@ -23,33 +23,31 @@ function App() {
   return (
     <div>
       <h1 style={{
-        fontSize: '2.6em', 
+        fontSize: '3.5em', 
         marginBottom: '15px', 
-        fontFamily: "'Comfortaa', cursive",
+        fontFamily: "'Press Start 2P', cursive",
         fontWeight: 'bold',
         letterSpacing: '2px',
-        transform: 'scale(1.1)',
+        background: 'linear-gradient(90deg, #FF70A6, #9370DB)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text',
+        textShadow: '0 0 0 #FFF, 3px 3px 0px rgba(147, 112, 219, 0.5), -3px -3px 0px rgba(255, 112, 166, 0.5)',
+        paint: 'stroke',
+        textTransform: 'uppercase',
       }}>
-        <span style={{color: '#FFD700'}}>✨</span>
-        <span style={{
-          color: '#00D9FF',
-          display: 'inline-block',
-          filter: 'drop-shadow(3px 3px 0px rgba(0, 217, 255, 0.3))'
-        }}>
-          Pokédex Girly
-        </span>
-        <span style={{color: '#FFD700'}}>✨</span>
+        PYXINA POKEDEX
       </h1>
       <p style={{
-        fontSize: '1.5em', 
-        color: '#00D9FF', 
+        fontSize: '1.2em', 
+        color: '#FF70A6', 
         marginBottom: '30px', 
-        fontStyle: 'italic',
         fontWeight: 'bold',
-        fontFamily: "'Comfortaa', cursive",
-        textShadow: '2px 2px 4px rgba(0, 217, 255, 0.4)',
-        letterSpacing: '1px'
-      }}>💕 Découvrez vos pokémons favoris 💕</p>
+        fontFamily: "'Press Start 2P', cursive",
+        textShadow: '2px 2px 0px #FFF, 3px 3px 0px rgba(255, 112, 166, 0.3)',
+        letterSpacing: '1px',
+        textTransform: 'uppercase'
+      }}>💕 DECOUVREZ VOS POKEMON FAVORIS 💕</p>
       <Pokelist></Pokelist>
     </div>
   )

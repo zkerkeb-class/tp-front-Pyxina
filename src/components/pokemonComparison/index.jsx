@@ -53,10 +53,8 @@ const PokemonComparison = ({ pokemons, onClose }) => {
     return (
         <div className="comparison-modal-overlay" onClick={onClose}>
             <div className="comparison-modal" onClick={(e) => e.stopPropagation()}>
-                <button className="close-btn" onClick={onClose}>✕</button>
-                
-                <h2 style={{color: '#00D9FF', fontFamily: "'Comfortaa', cursive", textAlign: 'center', marginBottom: '30px'}}>
-                    Comparaison de Pokémon
+                <h2 style={{color: '#FF70A6', fontFamily: "'Press Start 2P', cursive", fontSize: '16px', textAlign: 'center', marginBottom: '30px', textTransform: 'uppercase', textShadow: '2px 2px 0 #FFFFFF, 3px 3px 0 rgba(147, 112, 219, 0.5)'}}>
+                    Comparaison
                 </h2>
 
                 <div className="comparison-container">

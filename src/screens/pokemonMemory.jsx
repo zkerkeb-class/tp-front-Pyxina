@@ -28,7 +28,7 @@ const PokemonMemory = () => {
             const data = await response.json();
             const pokemons = data.pokemons || data;
 
-            // Sélectionner 8 pokémons aléatoires
+            // Sélectionner 8 pokémon aléatoires
             const selected = pokemons.sort(() => 0.5 - Math.random()).slice(0, 8);
 
             // Créer les cartes (chaque pokémon apparaît 2 fois)
@@ -86,7 +86,7 @@ const PokemonMemory = () => {
         return (
             <div className="pokemon-memory">
                 <Link to="/" className="back-link">← Retour à la liste</Link>
-                <h1 style={{color: '#00D9FF', fontFamily: "'Comfortaa', cursive"}}>Jeu Memory Pokémon</h1>
+                <h1 style={{color: '#00D9FF', fontFamily: "'Press Start 2P', cursive", textTransform: 'uppercase', fontSize: '28px'}}>JEU MEMORY</h1>
                 <p>Chargement du jeu...</p>
             </div>
         );
@@ -96,16 +96,16 @@ const PokemonMemory = () => {
         <div className="pokemon-memory">
             <Link to="/" className="back-link">← Retour à la liste</Link>
 
-            <h1 style={{color: '#00D9FF', fontFamily: "'Comfortaa', cursive"}}>🎮 Jeu Memory Pokémon 🎮</h1>
+            <h1 style={{color: '#00D9FF', fontFamily: "'Press Start 2P', cursive", textTransform: 'uppercase', fontSize: '28px'}}>🎮 JEU MEMORY 🎮</h1>
 
             <div className="memory-stats">
                 <div className="stat-box">
-                    <p>Coups</p>
+                    <p style={{fontFamily: "'Press Start 2P', cursive", fontSize: '12px', textTransform: 'uppercase'}}>COUPS</p>
                     <span style={{color: '#FF69B4', fontSize: '28px', fontWeight: 'bold'}}>{moves}</span>
                 </div>
                 <div className="stat-box">
-                    <p>Paires trouvées</p>
-                    <span style={{color: '#00D9FF', fontSize: '28px', fontWeight: 'bold'}}>{Math.floor(matched.length / 2)} / {cards.length / 2}</span>
+                    <p style={{fontFamily: "'Press Start 2P', cursive", fontSize: '12px', textTransform: 'uppercase'}}>PAIRES TROUVEES</p>
+                    <span style={{color: '#FF70A6', fontSize: '28px', fontWeight: 'bold'}}>{Math.floor(matched.length / 2)} / {cards.length / 2}</span>
                 </div>
             </div>
 

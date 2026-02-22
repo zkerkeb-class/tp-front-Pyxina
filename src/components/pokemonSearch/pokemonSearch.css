@@ -53,34 +53,46 @@
 
 .btn-search {
     padding: 10px 20px;
-    background-color: #667eea;
+    background-color: #FF70A6;
     color: white;
-    border: none;
-    border-radius: 6px;
+    border: 3px solid #9370DB;
+    border-radius: 0px;
     cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: all 0.1s;
     white-space: nowrap;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 0px #9370DB;
 }
 
 .btn-search:hover {
-    background-color: #764ba2;
+    background-color: #9370DB;
+    box-shadow: 5px 5px 0px #FF70A6;
+    transform: translate(-2px, -2px);
 }
 
 .btn-reset {
     padding: 10px 20px;
-    background-color: #888;
+    background-color: #9370DB;
     color: white;
-    border: none;
-    border-radius: 6px;
+    border: 3px solid #FF70A6;
+    border-radius: 0px;
     cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: all 0.1s;
     white-space: nowrap;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 0px #FF70A6;
 }
 
 .btn-reset:hover {
-    background-color: #999;
+    background-color: #FF70A6;
+    box-shadow: 5px 5px 0px #9370DB;
+    transform: translate(-2px, -2px);
 }
 
 @media (max-width: 768px) {

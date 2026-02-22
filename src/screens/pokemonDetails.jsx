@@ -128,12 +128,12 @@ const PokemonDetails = () => {
                 <div className="details-content">
                     {!isEditing ? (
                         <>
-                            <h1 style={{color: '#00D9FF', fontSize: '2.8em', fontFamily: "'Comfortaa', cursive"}}>{pokemon.name.english}</h1>
-                            <p className="french-name" style={{color: '#00FFE7'}}>{pokemon.name.french}</p>
+                            <h1 style={{color: '#00D9FF', fontSize: '5em', fontFamily: "'Press Start 2P', cursive", textTransform: 'uppercase', textShadow: '2px 2px 0px #FFF, 3px 3px 0px rgba(255, 255, 255, 0.5)'}}>{pokemon.name.english.toUpperCase()}</h1>
+                            <p className="french-name" style={{color: '#FF70A6', fontFamily: "'Press Start 2P', cursive", textTransform: 'uppercase', fontSize: '24px'}}>{pokemon.name.french.toUpperCase()}</p>
                             <p className="japanese-name" style={{color: '#00D9FF'}}>{pokemon.name.japanese}</p>
 
                             <div className="types-section">
-                                <h3>Types:</h3>
+                                <h3>Type(s):</h3>
                                 <div className="types">
                                     {pokemon.type.map((t, i) => (
                                         <span key={i} className={`type-tag type-${t.toLowerCase()}`}>{t}</span>
@@ -193,7 +193,7 @@ const PokemonDetails = () => {
                             </div>
 
                             <div className="form-group">
-                                <label>Types:</label>
+                                <label>Type(s):</label>
                                 {editData.type?.map((t, i) => (
                                     <div key={i} className="type-input-group">
                                         <CustomSelect

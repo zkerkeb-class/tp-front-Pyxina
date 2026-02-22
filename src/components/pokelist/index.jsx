@@ -15,12 +15,12 @@ const PokeList = () => {
     const [selectedPokemons, setSelectedPokemons] = useState([]);
     const [showComparison, setShowComparison] = useState(false);
 
-    // Charger TOUS les pokémons une seule fois au démarrage
+    // Charger TOUS les pokémon une seule fois au démarrage
     useEffect(() => {
         const fetchAllPokemons = async () => {
             setLoading(true);
             try {
-                // Récupérer le nombre total de pokémons
+                // Récupérer le nombre total de pokémon
                 const firstResponse = await fetch('http://localhost:3000/api/pokemons?page=1');
                 const firstData = await firstResponse.json();
                 
@@ -117,7 +117,7 @@ const PokeList = () => {
 
     return (
         <div className="poke-list-container">
-            <h2 style={{color: '#00D9FF', fontSize: '2.2em', fontFamily: "'Comfortaa', cursive"}}>Liste des Pokémon</h2>
+            <h2 style={{color: '#9370DB', fontSize: '2.2em', fontFamily: "'Press Start 2P', cursive", textTransform: 'uppercase'}}>LISTE DES POKEMON</h2>
             <div className="action-buttons">
                 <Link to="/pokemonAdd" className="btn-add-pokemon">+ Ajouter un Pokémon</Link>
                 <Link to="/memory" className="btn-memory-game">🎮 Jouer au Memory</Link>
@@ -159,8 +159,8 @@ const PokeList = () => {
                             />
                             <Link to={`/pokemonDetails/${pokemon.id}`}>
                                 <div className="poke-card-list">
-                                    <h3 style={{color: '#00D9FF'}}>{pokemon.name.english}</h3>
-                                    <p style={{color: '#00FFE7'}}>{pokemon.name.french}</p>
+                                    <h3 style={{color: '#9370DB', fontFamily: "'Press Start 2P', cursive", textTransform: 'uppercase', fontSize: '16px', textShadow: '2px 2px 0px #FFF, 3px 3px 0px rgba(255, 255, 255, 0.5)'}}>{pokemon.name.english.toUpperCase()}</h3>
+                                    <p style={{color: '#00FFE7', fontFamily: "'Press Start 2P', cursive", textTransform: 'uppercase', fontSize: '13px'}}>{pokemon.name.french.toUpperCase()}</p>
                                     <img src={pokemon.image} alt={pokemon.name.english} />
                                     <div className="poke-types">
                                         {pokemon.type.map((t, i) => (
@@ -182,7 +182,7 @@ const PokeList = () => {
                     ← Précédent
                 </button>
                 <span className="pagination-info">
-                    Page {currentPage} sur {totalPages} ({displayedPokemons.length} pokémons)
+                    Page {currentPage} sur {totalPages} ({displayedPokemons.length} pokémon)
                 </span>
                 <button 
                     onClick={handleNextPage} 
